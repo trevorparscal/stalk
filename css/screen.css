@@ -1,0 +1,55 @@
+.legs,
+.antenna {
+	fill: none;
+	stroke: #000000;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-miterlimit: 10;
+}
+.eyes {
+	fill: #FF4A1F;
+}
+.shell,
+.splat {
+	stroke: #000000;
+}
+.severity-blocker {
+	fill: #FF0000;
+	stroke-width: 2;
+}
+.severity-critical {
+	fill: #980000;
+	stroke-width: 2;
+}
+.severity-major {
+	fill: #980000;
+}
+.severity-normal {
+	fill: #BB7700;
+}
+.severity-minor {
+	fill: #669900;
+}
+.severity-trivial {
+	fill: #009966;
+}
+.severity-enhancement {
+	fill: #106581;
+}
+.resolved {
+	-webkit-animation: resolve 900s;
+	-moz-animation: resolve 900s;
+	animation: resolve 900s;
+}
+
+@-webkit-keyframes resolve {
+	0% { fill-opacity: 0.5; } 10% { fill-opacity: 0.25; } 100% { fill-opacity: 0; }
+}
+
+@-moz-keyframes resolve {
+	0% { fill-opacity: 0.5; } 10% { fill-opacity: 0.25; } 100% { fill-opacity: 0; }
+}
+
+@keyframes resolve {
+	0% { fill-opacity: 0.5; } 10% { fill-opacity: 0.25; } 100% { fill-opacity: 0; }
+}

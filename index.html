@@ -1,0 +1,79 @@
+<!--
+	poll: https://integration.wikimedia.org/zuul/status.json
+	show: status of VE stuff
+
+	poll: https://bugzilla.wikimedia.org/buglist.cgi?bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&columnlist=bug_severity%2Cpriority%2Ccomponent%2Cassigned_to%2Ctarget_milestone%2Cbug_status%2Cresolution%2Cshort_desc&component=ContentEditable&component=Data%20Model&component=General&component=Initialisation%20and%20integration&component=Mobile&component=Parser%2FParsoid&component=User%20Interface&product=VisualEditor&query_format=advanced&resolution=---&title=Bug%20List%3A%20VE%20%28All%29&ctype=atom&list_id=218059
+	show: number of bugs by category
+
+	poll: https://gerrit.wikimedia.org/r/changes/?q=status:open%20project:mediawiki/extensions/VisualEditor%20-label:Code-Review%3C=-1%20-label:Verified%3C=-1
+	show: stuff that's ready to be reviewed, stuff that failed (-1)
+-->
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Pop Demo</title>
+		<link href="css/screen.css" rel="stylesheet">
+	</head>
+	<body>
+		<svg id="buglist" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" xml:space="preserve">
+			<defs>
+				<path id="splat" d="M12.429,0.201c-3.998,0.866-0.515,2.244,4.754,4.866c-5.776-0.736-8.87-0.929-5.64,2.358 c-4.211-1.594-1.908,1.583,1.64,6.938C8.25,10.39,6.105,9.865,7.758,15.329C4.411,10.842,3,10.009,3.043,15.195 c-1.93-4.679-2.732-1.908-4.02,4.437c-0.724-6.345-2.207-6.566-5.021-0.691c0.924-6.38,1.203-9.837-2.237-6.166 c1.749-4.652-0.186-3.605-5.109-0.208c3.54-4.78,5.453-7.216,1.07-5.847c3.404-3.064,3.17-3.377-1.434-3.105 c4.1-2.159,2.359-2.547-2.921-3.413c5.28-1.147,7.738-1.346,3.977-3.132c4.267-0.102-0.14-2.873-5.382-6.72 c6.221,2.153,7.721,1.479,3.945-3.258c5.162,3.352,7.613,4.924,5.873,0.563c3.435,3.381,2.859-1.156,1.8-7.755 c2.946,6.093,4.716,11.922,5.439,8.199c1.29,3.723,2.656-0.616,4.855-6.006c-0.31,5.898-0.689,9.295,2.087,6.083 c-1.083,4.194,1.699,2.141,6.355-1.271c-3.271,4.797-3.345,6.435,1.636,4.674c-4,3.453-2.068,4.081,3.929,3.569 C12.388-2.45,8.43-0.945,12.429,0.201z"/>
+				<g id="fat-legs">
+					<path class="legs" d="M3.729,3.343v1.548v1.02 M4.729-5.64l-1,1.017v1.55 M0.1-4.051v-1.493l-0.015-1.02 M0.1,4.32v1.496l0.985,1.018 M-3.271,3.344 v1.547v1.02 M-2.271-5.64l-1,1.017v1.551">
+						<animate attributeName="display" values="inline;none;none;none;none" keyTimes="0;0.25;0.5;0.75;1" dur="500ms" begin="0s" repeatCount="indefinite" fill="freeze"/>
+					</path>
+					<path class="legs" d="M3.729,3.343v1.548l-1,1.02 M3.729-3.073v-1.55V-5.64 M0.1-4.051v-1.493l-1.015-1.02 M0.085,6.834L0.1,5.816V4.32 M-4.271,5.91 l1-1.02V3.344 M-3.271-3.072v-1.551V-5.64">
+						<animate attributeName="display" values="none;inline;none;none;none" keyTimes="0;0.25;0.5;0.75;1" dur="500ms" begin="0s" repeatCount="indefinite" fill="freeze"/>
+					</path>
+					<path class="legs" d="M3.729,3.343v1.548v1.02 M3.729-3.073v-1.55l-1-1.017 M0.1-4.051v-1.493l-0.015-1.02 M-0.915,6.834L0.1,5.816V4.32 M-3.271,3.344 v1.547v1.02 M-3.271-3.072v-1.551l-1-1.017">
+						<animate attributeName="display" values="none;none;inline;none;none" keyTimes="0;0.25;0.5;0.75;1" dur="500ms" begin="0s" repeatCount="indefinite" fill="freeze"/>
+					</path>
+					<path class="legs" d="M4.729,5.91l-1-1.02V3.343 M3.729-3.073v-1.55V-5.64 M1.085-6.563L0.1-5.544v1.493 M0.085,6.834L0.1,5.816V4.32 M-3.271,3.344 v1.547l1,1.02 M-3.271-3.072v-1.551V-5.64">
+						<animate attributeName="display" values="none;none;none;inline;none" keyTimes="0;0.25;0.5;0.75;1" dur="500ms" begin="0s" repeatCount="indefinite" fill="freeze"/>
+					</path>
+				</g>
+				<g id="fat-head">
+					<path class="antenna" d="M7.145,2.085l1.118,0.3l0.791,1.838 M7.145-1.798l1.118-0.301l0.791-1.838"/>
+					<path class="head" d="M2.853,4.17C3.052,4.197,3.25,4.223,3.457,4.223c2.334,0,4.162-1.774,4.162-4.04 c0-2.268-1.828-4.042-4.162-4.042c-0.207,0-0.405,0.026-0.604,0.054V4.17z"/>
+					<path class="eyes" d="M5.804,2.282c-0.392,0-0.462-0.402-0.156-0.893l0.816-0.479 C6.854,0.653,6.988,0.776,6.76,1.185C6.531,1.595,6.194,2.282,5.804,2.282z M5.804-1.919c-0.392,0-0.462,0.402-0.156,0.894 l0.816,0.478C6.854-0.29,6.988-0.413,6.76-0.821C6.531-1.231,6.194-1.919,5.804-1.919z"/>
+				</g>
+				<ellipse id="fat-shell" class="shell" cx="0.177" cy="0.181" rx="5.28" ry="3.958"/>
+				<g id="skinny-legs">
+					<path class="legs" d="M4.382,2.097v1.9v0.95 M5.382-4.939l-1,0.948v1.901 M-6.53-2.089v-1.899v-0.951 M-6.53,2.098v1.901l1,0.949 M0.744,3.404v1.898 l1,0.951 M0.744-3.396v-1.902v-0.949 M-1.9-6.248l-0.985,0.951v1.9 M-2.9,6.254l0.015-0.949v-1.9">
+						<animate attributeName="display" values="inline;none;none;none;none" keyTimes="0;0.25;0.5;0.75;1" dur="500ms" begin="0s" repeatCount="indefinite" fill="freeze"/>
+					</path>
+					<path class="legs" d="M4.382,2.097v1.9l-1,0.95 M4.382-4.939v0.948v1.901 M-6.53-2.089v-1.899l-1-0.951 M-6.53,4.948V3.999V2.098 M0.744,6.254V5.303 V3.404 M0.744-3.396v-1.902l-1-0.949 M-2.886-3.396v-1.9L-2.9-6.248 M-3.9,6.254l1.015-0.949v-1.9">
+						<animate attributeName="display" values="none;inline;none;none;none" keyTimes="0;0.25;0.5;0.75;1" dur="500ms" begin="0s" repeatCount="indefinite" fill="freeze"/>
+					</path>
+					<path class="legs" d="M4.382,2.097v1.9v0.95 M4.382-2.09v-1.901l-1-0.948 M-6.53-2.089v-1.899v-0.951 M-7.53,4.948l1-0.949V2.098 M-0.256,6.254l1-0.951 V3.404 M0.744-3.396v-1.902v-0.949 M-2.886-3.396v-1.9L-3.9-6.248 M-2.9,6.254l0.015-0.949v-1.9">
+						<animate attributeName="display" values="none;none;inline;none;none" keyTimes="0;0.25;0.5;0.75;1" dur="500ms" begin="0s" repeatCount="indefinite" fill="freeze"/>
+					</path>
+					<path class="legs" d="M5.382,4.947l-1-0.95v-1.9 M4.382-4.939v0.948v1.901 M-5.53-4.939l-1,0.951v1.899 M-6.53,4.948V3.999V2.098 M0.744,6.254V5.303 V3.404 M1.744-6.248l-1,0.949v1.902 M-2.886-3.396v-1.9L-2.9-6.248 M-2.886,3.404v1.9L-1.9,6.254">
+						<animate attributeName="display" values="none;none;none;inline;none" keyTimes="0;0.25;0.5;0.75;1" dur="500ms" begin="0s" repeatCount="indefinite" fill="freeze"/>
+					</path>
+				</g>
+				<g id="skinny-head">
+					<path class="antenna" d="M7.925,0.953h1.182l1.513,2.688 M7.925-0.946h1.182l1.513-2.688"/>
+					<path class="head" d="M2.552,3.057c0.262,0.021,0.522,0.04,0.794,0.04c3.066,0,5.469-1.358,5.469-3.094 c0-1.734-2.402-3.094-5.469-3.094c-0.271,0-0.532,0.021-0.794,0.042V3.057z"/>
+					<path class="eyes" d="M6.429,1.611c-0.514,0-0.606-0.308-0.205-0.684l1.073-0.366 c0.514-0.198,0.688-0.104,0.389,0.21C7.385,1.085,6.943,1.611,6.429,1.611z M6.429-1.605c-0.514,0-0.606,0.309-0.205,0.685 l1.073,0.366c0.514,0.197,0.688,0.104,0.389-0.21C7.385-1.079,6.943-1.605,6.429-1.605z"/>
+				</g>
+				<ellipse id="skinny-shell" class="shell" cx="-1.108" cy="0.004" rx="6.792" ry="3.031"/>
+			</defs>
+		</svg>
+		<script src="js/jquery.js"></script>
+		<script src="js/bugs.js"></script>
+		<script>
+			var buglist = new BugList();
+
+			// Populate bugs from bugzilla
+			buglist.update();
+
+			// Update every 15 min
+			setInterval( function () {
+				buglist.update();
+			}, 900000 );
+		</script>
+	</body>
+</html>
