@@ -1,3 +1,10 @@
+/* Work around broken width/height for <svg> in Firefox */
+#buglist {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
 .legs,
 .antenna {
 	fill: none;
