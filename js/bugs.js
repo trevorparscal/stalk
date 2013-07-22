@@ -17,6 +17,7 @@ window.Bug = function ( list, data ) {
 
 	// Initialization
 	this.update();
+	this.element.setAttribute( 'class', 'bug' );
 	this.legs.setAttributeNS( xlinkns, 'href', '#' + this.model + '-legs' );
 	this.head.setAttributeNS( xlinkns, 'href', '#' + this.model + '-head' );
 	this.shell.setAttributeNS( xlinkns, 'href', '#' + this.model + '-shell' );
@@ -118,9 +119,9 @@ window.BugList = function() {
 	this.element = document.createElementNS( svgns, 'g' );
 	this.rect = this.canvas.getBoundingClientRect();
 	this.bugs = {};
-	this.updates = 0;
 
 	// Initialization
+	this.element.setAttribute( 'class', 'buglist' );
 	this.canvas.appendChild( this.element );
 };
 
@@ -157,6 +158,7 @@ BugList.prototype.onUpdate = function ( data ) {
 	for ( key in this.bugs ) {
 		if ( !index[key] ) {
 			this.bugs[key].resolve();
+			delete this.bugs[key];
 		}
 	}
 
@@ -168,8 +170,6 @@ BugList.prototype.onUpdate = function ( data ) {
 			this.bugs[key].update( index[key] );
 		}
 	}
-
-	this.updates++;
 };
 
 } () );

@@ -1,0 +1,144 @@
+{
+	"pipelines": [
+		{
+			"description": null,
+			"change_queues": [
+				{
+					"heads": [
+						
+					],
+					"name": "mediawiki\/core, mediawiki\/extensions\/AbuseFilter, mediawiki\/extensions\/ActiveAbstract, mediawiki\/extensions\/AntiSpoof, mediawiki\/extensions\/Arrays, mediawiki\/extensions\/Ask, mediawiki\/extensions\/BookManager, mediawiki\/extensions\/CentralNotice, mediawiki\/extensions\/Cite, mediawiki\/extensions\/CodeReview, mediawiki\/extensions\/ContributionTracking, mediawiki\/extensions\/DataTypes, mediawiki\/extensions\/DataValues, mediawiki\/extensions\/Diff, mediawiki\/extensions\/DonationInterface, mediawiki\/extensions\/E3Experiments, mediawiki\/extensions\/Echo, mediawiki\/extensions\/EducationProgram, mediawiki\/extensions\/EtherEditor, mediawiki\/extensions\/EventLogging, mediawiki\/extensions\/Foxway, mediawiki\/extensions\/Gadgets, mediawiki\/extensions\/GeoData, mediawiki\/extensions\/GuidedTour, mediawiki\/extensions\/JsonData, mediawiki\/extensions\/LabeledSectionTransclusion, mediawiki\/extensions\/Maps, mediawiki\/extensions\/Math, mediawiki\/extensions\/MobileFrontend, mediawiki\/extensions\/MultiMaps, mediawiki\/extensions\/NaturalLanguageList, mediawiki\/extensions\/Nonlinear, mediawiki\/extensions\/PageTriage, mediawiki\/extensions\/PagedTiffHandler, mediawiki\/extensions\/ParserFunctions, mediawiki\/extensions\/ParserHooks, mediawiki\/extensions\/Parsoid, mediawiki\/extensions\/Poem, mediawiki\/extensions\/PoolCounter, mediawiki\/extensions\/ProofreadPage, mediawiki\/extensions\/ReplaceSet, mediawiki\/extensions\/Scribunto, mediawiki\/extensions\/SemanticMediaWiki, mediawiki\/extensions\/SlippyMap, mediawiki\/extensions\/Survey, mediawiki\/extensions\/TemplateData, mediawiki\/extensions\/TitleBlacklist, mediawiki\/extensions\/Transliterator, mediawiki\/extensions\/UploadWizard, mediawiki\/extensions\/Validator, mediawiki\/extensions\/Variables, mediawiki\/extensions\/VisualEditor, mediawiki\/extensions\/Wikibase, mediawiki\/extensions\/WikibaseDataModel, mediawiki\/extensions\/WikibaseDatabase, mediawiki\/extensions\/WikibaseQuery, mediawiki\/extensions\/WikibaseQueryEngine, mediawiki\/extensions\/wikihiero, operations\/mediawiki-config"
+				}
+			],
+			"name": "check"
+		},
+		{
+			"description": null,
+			"change_queues": [
+				{
+					"heads": [
+						
+					],
+					"name": "mediawiki\/extensions\/APC, mediawiki\/extensions\/AdminLinks, mediawiki\/extensions\/Agora, mediawiki\/extensions\/Annotator, mediawiki\/extensions\/AntiBot, mediawiki\/extensions\/ApiSandbox, mediawiki\/extensions\/ApprovedRevs, mediawiki\/extensions\/ArticleFeedbackv5, mediawiki\/extensions\/Babel, mediawiki\/extensions\/BlameMaps, mediawiki\/extensions\/BookManagerv2, mediawiki\/extensions\/Calendar, mediawiki\/extensions\/Campaigns, mediawiki\/extensions\/CategoryTree, mediawiki\/extensions\/CentralAuth, mediawiki\/extensions\/CharInsert, mediawiki\/extensions\/CheckUser, mediawiki\/extensions\/CirrusSearch, mediawiki\/extensions\/CleanChanges, mediawiki\/extensions\/ClickTracking, mediawiki\/extensions\/ClientSide, mediawiki\/extensions\/CodeEditor, mediawiki\/extensions\/Collection, mediawiki\/extensions\/CommunityApplications, mediawiki\/extensions\/CommunityHiring, mediawiki\/extensions\/CommunityVoice, mediawiki\/extensions\/Configure, mediawiki\/extensions\/ConfirmEdit, mediawiki\/extensions\/ContactPage, mediawiki\/extensions\/ContactPageFundraiser, mediawiki\/extensions\/ContributionReporting, mediawiki\/extensions\/ContributionScores, mediawiki\/extensions\/CoreEvents, mediawiki\/extensions\/CreditsSource, mediawiki\/extensions\/CustomData, mediawiki\/extensions\/CustomUserSignup, mediawiki\/extensions\/DeleteBatch, mediawiki\/extensions\/DisableAccount, mediawiki\/extensions\/Disambiguator, mediawiki\/extensions\/DiscussionThreading, mediawiki\/extensions\/DismissableSiteNotice, mediawiki\/extensions\/DoubleWiki, mediawiki\/extensions\/DumpHTML, mediawiki\/extensions\/DynamicSidebar, mediawiki\/extensions\/EditPageTracking, mediawiki\/extensions\/Editcount, mediawiki\/extensions\/EmailCapture, mediawiki\/extensions\/ExpandTemplates, mediawiki\/extensions\/ExtensionDistributor, mediawiki\/extensions\/FeaturedFeeds, mediawiki\/extensions\/FormPreloadPostCache, mediawiki\/extensions\/FundraiserLandingPage, mediawiki\/extensions\/GeoCrumbs, mediawiki\/extensions\/GettingStarted, mediawiki\/extensions\/GlobalBlocking, mediawiki\/extensions\/GlobalUsage, mediawiki\/extensions\/GoogleAdSense, mediawiki\/extensions\/GoogleCustomWikiSearch, mediawiki\/extensions\/GoogleNewsSitemap, mediawiki\/extensions\/GoogleSiteSearch, mediawiki\/extensions\/I18nTags, mediawiki\/extensions\/ImageMap, mediawiki\/extensions\/InputBox, mediawiki\/extensions\/Insider, mediawiki\/extensions\/Interwiki, mediawiki\/extensions\/LandingCheck, mediawiki\/extensions\/LastModified, mediawiki\/extensions\/LdapAuthentication, mediawiki\/extensions\/Lingo, mediawiki\/extensions\/LinkedWiki, mediawiki\/extensions\/LiquidThreads, mediawiki\/extensions\/Listings, mediawiki\/extensions\/LocalisationUpdate, mediawiki\/extensions\/MWSearch, mediawiki\/extensions\/MapSources, mediawiki\/extensions\/MarkAsHelpful, mediawiki\/extensions\/MoodBar, mediawiki\/extensions\/MwEmbedSupport, mediawiki\/extensions\/Narayam, mediawiki\/extensions\/NavigationTiming, mediawiki\/extensions\/NewUserMessage, mediawiki\/extensions\/NewUserNotif, mediawiki\/extensions\/NewestPages, mediawiki\/extensions\/Nuke, mediawiki\/extensions\/OAI, mediawiki\/extensions\/OATHAuth, mediawiki\/extensions\/Offline, mediawiki\/extensions\/OpenID, mediawiki\/extensions\/OpenSearchXml, mediawiki\/extensions\/OpenStackManager, mediawiki\/extensions\/PHPExcel, mediawiki\/extensions\/PageImages, mediawiki\/extensions\/PdfHandler, mediawiki\/extensions\/PostEdit, mediawiki\/extensions\/Quiz, mediawiki\/extensions\/RSS, mediawiki\/extensions\/RandomRootPage, mediawiki\/extensions\/ReaderFeedback, mediawiki\/extensions\/RelatedArticles, mediawiki\/extensions\/RelatedSites, mediawiki\/extensions\/Renameuser, mediawiki\/extensions\/ReplaceText, mediawiki\/extensions\/SVGEdit, mediawiki\/extensions\/Score, mediawiki\/extensions\/SearchExtraNS, mediawiki\/extensions\/SecurePoll, mediawiki\/extensions\/SemanticACL, mediawiki\/extensions\/SemanticBundle, mediawiki\/extensions\/SemanticCompoundQueries, mediawiki\/extensions\/SemanticDrilldown, mediawiki\/extensions\/SemanticExpressiveness, mediawiki\/extensions\/SemanticExtraSpecialProperties, mediawiki\/extensions\/SemanticForms, mediawiki\/extensions\/SemanticFormsInputs, mediawiki\/extensions\/SemanticGenealogy, mediawiki\/extensions\/SemanticGlossary, mediawiki\/extensions\/SemanticImageAnnotator, mediawiki\/extensions\/SemanticImageInput, mediawiki\/extensions\/SemanticInternalObjects, mediawiki\/extensions\/SemanticMaps, mediawiki\/extensions\/SemanticPageMaker, mediawiki\/extensions\/SemanticPageSeries, mediawiki\/extensions\/SemanticResultFormats, mediawiki\/extensions\/SemanticSignup, mediawiki\/extensions\/SemanticTasks, mediawiki\/extensions\/SemanticTitle, mediawiki\/extensions\/SemanticUpdateOnPurge, mediawiki\/extensions\/SemanticWatchlist, mediawiki\/extensions\/Serialization, mediawiki\/extensions\/ShortUrl, mediawiki\/extensions\/SimpleAntiSpam, mediawiki\/extensions\/SiteMatrix, mediawiki\/extensions\/SkinPerPage, mediawiki\/extensions\/Solarium, mediawiki\/extensions\/SpamBlacklist, mediawiki\/extensions\/StrategyWiki, mediawiki\/extensions\/SubPageList3, mediawiki\/extensions\/SubpageSortkey, mediawiki\/extensions\/Sudo, mediawiki\/extensions\/SyntaxHighlight_GeSHi, mediawiki\/extensions\/TemplateSandbox, mediawiki\/extensions\/Thanks, mediawiki\/extensions\/TimedMediaHandler, mediawiki\/extensions\/TitleKey, mediawiki\/extensions\/TocTree, mediawiki\/extensions\/TorBlock, mediawiki\/extensions\/Translate, mediawiki\/extensions\/TranslationNotifications, mediawiki\/extensions\/TrustedXFF, mediawiki\/extensions\/TwnMainPage, mediawiki\/extensions\/UnicodeConverter, mediawiki\/extensions\/UniversalLanguageSelector, mediawiki\/extensions\/UploadBlacklist, mediawiki\/extensions\/UserDailyContribs, mediawiki\/extensions\/UserMerge, mediawiki\/extensions\/UserOptionStats, mediawiki\/extensions\/UserThrottle, mediawiki\/extensions\/Vector, mediawiki\/extensions\/VipsScaler, mediawiki\/extensions\/WebChat, mediawiki\/extensions\/WebFonts, mediawiki\/extensions\/WikiEditor, mediawiki\/extensions\/WikiLove, mediawiki\/extensions\/WikimediaIncubator, mediawiki\/extensions\/WikimediaMaintenance, mediawiki\/extensions\/WikimediaMessages, mediawiki\/extensions\/WikimediaShopLink, mediawiki\/extensions\/ZeroRatedMobileAccess, mediawiki\/extensions\/cldr, mediawiki\/extensions\/intersection, mediawiki\/extensions\/skins, mediawiki\/extensions\/timeline, translatewiki"
+				}
+			],
+			"name": "check-only"
+		},
+		{
+			"description": null,
+			"change_queues": [
+				{
+					"heads": [
+						
+					],
+					"name": "analytics\/asana-stats, analytics\/check-stats, analytics\/editor-geocoding, analytics\/gerrit-stats, analytics\/glass, analytics\/reportcard, integration\/docroot, integration\/jenkins, integration\/jenkins-job-builder-config, integration\/zuul-config, labs\/incubator, labs\/nagios-builder, mediawiki\/skins\/erudite, mediawiki\/skins\/mediawiki-strapping, mediawiki\/skins\/webplatform, mediawiki\/tools\/code-utils, mediawiki\/tools\/dippybird, mediawiki\/tools\/fluoride, mediawiki\/tools\/release, mediawiki\/vagrant, operations\/apache-config, operations\/debs\/adminbot, operations\/debs\/ircecho, operations\/dns, operations\/dumps, operations\/puppet, operations\/puppet\/cdh4, operations\/puppet\/jmxtrans, operations\/puppet\/kafka, operations\/puppet\/zookeeper, operations\/software, operations\/software\/redactatron, pywikibot\/compat, pywikibot\/core, pywikibot\/i18n, qa\/browsertests, sartoris, wikimedia\/bugzilla\/wikibugs"
+				}
+			],
+			"name": "check-voter"
+		},
+		{
+			"description": null,
+			"change_queues": [
+				{
+					"heads": [
+						
+					],
+					"name": "analytics\/libanon, analytics\/udp-filters, analytics\/webstatscollector, analytics\/wikistats"
+				}
+			],
+			"name": "gate"
+		},
+		{
+			"description": null,
+			"change_queues": [
+				{
+					"heads": [
+						
+					],
+					"name": "analytics\/asana-stats, analytics\/check-stats, analytics\/editor-geocoding, analytics\/gerrit-stats, analytics\/glass, analytics\/reportcard, apps\/android\/commons, integration\/docroot, integration\/jenkins, integration\/zuul-config, labs\/incubator, labs\/nagios-builder, mediawiki\/core, mediawiki\/extensions\/APC, mediawiki\/extensions\/AbuseFilter, mediawiki\/extensions\/ActiveAbstract, mediawiki\/extensions\/AdminLinks, mediawiki\/extensions\/Agora, mediawiki\/extensions\/Annotator, mediawiki\/extensions\/AntiBot, mediawiki\/extensions\/AntiSpoof, mediawiki\/extensions\/ApiSandbox, mediawiki\/extensions\/ApprovedRevs, mediawiki\/extensions\/Arrays, mediawiki\/extensions\/ArticleFeedbackv5, mediawiki\/extensions\/Ask, mediawiki\/extensions\/Babel, mediawiki\/extensions\/BlameMaps, mediawiki\/extensions\/BookManager, mediawiki\/extensions\/BookManagerv2, mediawiki\/extensions\/Calendar, mediawiki\/extensions\/Campaigns, mediawiki\/extensions\/CategoryTree, mediawiki\/extensions\/CentralAuth, mediawiki\/extensions\/CentralNotice, mediawiki\/extensions\/CharInsert, mediawiki\/extensions\/CheckUser, mediawiki\/extensions\/CirrusSearch, mediawiki\/extensions\/Cite, mediawiki\/extensions\/CleanChanges, mediawiki\/extensions\/ClickTracking, mediawiki\/extensions\/ClientSide, mediawiki\/extensions\/CodeEditor, mediawiki\/extensions\/CodeReview, mediawiki\/extensions\/Collection, mediawiki\/extensions\/CommunityApplications, mediawiki\/extensions\/CommunityHiring, mediawiki\/extensions\/CommunityVoice, mediawiki\/extensions\/Configure, mediawiki\/extensions\/ConfirmEdit, mediawiki\/extensions\/ContactPage, mediawiki\/extensions\/ContactPageFundraiser, mediawiki\/extensions\/ContributionReporting, mediawiki\/extensions\/ContributionScores, mediawiki\/extensions\/ContributionTracking, mediawiki\/extensions\/CoreEvents, mediawiki\/extensions\/CreditsSource, mediawiki\/extensions\/CustomData, mediawiki\/extensions\/CustomUserSignup, mediawiki\/extensions\/DataTypes, mediawiki\/extensions\/DataValues, mediawiki\/extensions\/DeleteBatch, mediawiki\/extensions\/Diff, mediawiki\/extensions\/DisableAccount, mediawiki\/extensions\/Disambiguator, mediawiki\/extensions\/DiscussionThreading, mediawiki\/extensions\/DismissableSiteNotice, mediawiki\/extensions\/DonationInterface, mediawiki\/extensions\/DoubleWiki, mediawiki\/extensions\/DumpHTML, mediawiki\/extensions\/DynamicSidebar, mediawiki\/extensions\/E3Experiments, mediawiki\/extensions\/Echo, mediawiki\/extensions\/EditPageTracking, mediawiki\/extensions\/Editcount, mediawiki\/extensions\/EducationProgram, mediawiki\/extensions\/EmailCapture, mediawiki\/extensions\/EtherEditor, mediawiki\/extensions\/EventLogging, mediawiki\/extensions\/ExpandTemplates, mediawiki\/extensions\/ExtensionDistributor, mediawiki\/extensions\/FeaturedFeeds, mediawiki\/extensions\/FormPreloadPostCache, mediawiki\/extensions\/Foxway, mediawiki\/extensions\/FundraiserLandingPage, mediawiki\/extensions\/Gadgets, mediawiki\/extensions\/GeoCrumbs, mediawiki\/extensions\/GeoData, mediawiki\/extensions\/GettingStarted, mediawiki\/extensions\/GlobalBlocking, mediawiki\/extensions\/GlobalUsage, mediawiki\/extensions\/GoogleAdSense, mediawiki\/extensions\/GoogleCustomWikiSearch, mediawiki\/extensions\/GoogleNewsSitemap, mediawiki\/extensions\/GoogleSiteSearch, mediawiki\/extensions\/GuidedTour, mediawiki\/extensions\/I18nTags, mediawiki\/extensions\/ImageMap, mediawiki\/extensions\/InputBox, mediawiki\/extensions\/Insider, mediawiki\/extensions\/Interwiki, mediawiki\/extensions\/JsonData, mediawiki\/extensions\/LabeledSectionTransclusion, mediawiki\/extensions\/LandingCheck, mediawiki\/extensions\/LastModified, mediawiki\/extensions\/LdapAuthentication, mediawiki\/extensions\/Lingo, mediawiki\/extensions\/LinkedWiki, mediawiki\/extensions\/LiquidThreads, mediawiki\/extensions\/Listings, mediawiki\/extensions\/LocalisationUpdate, mediawiki\/extensions\/MWSearch, mediawiki\/extensions\/MapSources, mediawiki\/extensions\/Maps, mediawiki\/extensions\/MarkAsHelpful, mediawiki\/extensions\/Math, mediawiki\/extensions\/MobileFrontend, mediawiki\/extensions\/MoodBar, mediawiki\/extensions\/MultiMaps, mediawiki\/extensions\/MwEmbedSupport, mediawiki\/extensions\/Narayam, mediawiki\/extensions\/NaturalLanguageList, mediawiki\/extensions\/NavigationTiming, mediawiki\/extensions\/NewUserMessage, mediawiki\/extensions\/NewUserNotif, mediawiki\/extensions\/NewestPages, mediawiki\/extensions\/Nonlinear, mediawiki\/extensions\/Nuke, mediawiki\/extensions\/OAI, mediawiki\/extensions\/OATHAuth, mediawiki\/extensions\/Offline, mediawiki\/extensions\/OpenID, mediawiki\/extensions\/OpenSearchXml, mediawiki\/extensions\/OpenStackManager, mediawiki\/extensions\/PHPExcel, mediawiki\/extensions\/PageImages, mediawiki\/extensions\/PageTriage, mediawiki\/extensions\/PagedTiffHandler, mediawiki\/extensions\/ParserFunctions, mediawiki\/extensions\/ParserHooks, mediawiki\/extensions\/Parsoid, mediawiki\/extensions\/PdfHandler, mediawiki\/extensions\/Poem, mediawiki\/extensions\/PoolCounter, mediawiki\/extensions\/PostEdit, mediawiki\/extensions\/ProofreadPage, mediawiki\/extensions\/Quiz, mediawiki\/extensions\/RSS, mediawiki\/extensions\/RandomRootPage, mediawiki\/extensions\/ReaderFeedback, mediawiki\/extensions\/RelatedArticles, mediawiki\/extensions\/RelatedSites, mediawiki\/extensions\/Renameuser, mediawiki\/extensions\/ReplaceSet, mediawiki\/extensions\/ReplaceText, mediawiki\/extensions\/SVGEdit, mediawiki\/extensions\/Score, mediawiki\/extensions\/Scribunto, mediawiki\/extensions\/SearchExtraNS, mediawiki\/extensions\/SecurePoll, mediawiki\/extensions\/SemanticACL, mediawiki\/extensions\/SemanticBundle, mediawiki\/extensions\/SemanticCompoundQueries, mediawiki\/extensions\/SemanticDrilldown, mediawiki\/extensions\/SemanticExpressiveness, mediawiki\/extensions\/SemanticExtraSpecialProperties, mediawiki\/extensions\/SemanticForms, mediawiki\/extensions\/SemanticFormsInputs, mediawiki\/extensions\/SemanticGenealogy, mediawiki\/extensions\/SemanticGlossary, mediawiki\/extensions\/SemanticImageAnnotator, mediawiki\/extensions\/SemanticImageInput, mediawiki\/extensions\/SemanticInternalObjects, mediawiki\/extensions\/SemanticMaps, mediawiki\/extensions\/SemanticMediaWiki, mediawiki\/extensions\/SemanticPageMaker, mediawiki\/extensions\/SemanticPageSeries, mediawiki\/extensions\/SemanticResultFormats, mediawiki\/extensions\/SemanticSignup, mediawiki\/extensions\/SemanticTasks, mediawiki\/extensions\/SemanticTitle, mediawiki\/extensions\/SemanticUpdateOnPurge, mediawiki\/extensions\/SemanticWatchlist, mediawiki\/extensions\/Serialization, mediawiki\/extensions\/ShortUrl, mediawiki\/extensions\/SimpleAntiSpam, mediawiki\/extensions\/SiteMatrix, mediawiki\/extensions\/SkinPerPage, mediawiki\/extensions\/SlippyMap, mediawiki\/extensions\/Solarium, mediawiki\/extensions\/SpamBlacklist, mediawiki\/extensions\/StrategyWiki, mediawiki\/extensions\/SubPageList3, mediawiki\/extensions\/SubpageSortkey, mediawiki\/extensions\/Sudo, mediawiki\/extensions\/Survey, mediawiki\/extensions\/SyntaxHighlight_GeSHi, mediawiki\/extensions\/TemplateData, mediawiki\/extensions\/TemplateSandbox, mediawiki\/extensions\/Thanks, mediawiki\/extensions\/TimedMediaHandler, mediawiki\/extensions\/TitleBlacklist, mediawiki\/extensions\/TitleKey, mediawiki\/extensions\/TocTree, mediawiki\/extensions\/TorBlock, mediawiki\/extensions\/Translate, mediawiki\/extensions\/TranslationNotifications, mediawiki\/extensions\/Transliterator, mediawiki\/extensions\/TrustedXFF, mediawiki\/extensions\/TwnMainPage, mediawiki\/extensions\/UnicodeConverter, mediawiki\/extensions\/UniversalLanguageSelector, mediawiki\/extensions\/UploadBlacklist, mediawiki\/extensions\/UploadWizard, mediawiki\/extensions\/UserDailyContribs, mediawiki\/extensions\/UserMerge, mediawiki\/extensions\/UserOptionStats, mediawiki\/extensions\/UserThrottle, mediawiki\/extensions\/Validator, mediawiki\/extensions\/Variables, mediawiki\/extensions\/Vector, mediawiki\/extensions\/VipsScaler, mediawiki\/extensions\/VisualEditor, mediawiki\/extensions\/WebChat, mediawiki\/extensions\/WebFonts, mediawiki\/extensions\/WikiEditor, mediawiki\/extensions\/WikiLove, mediawiki\/extensions\/Wikibase, mediawiki\/extensions\/WikibaseDataModel, mediawiki\/extensions\/WikibaseDatabase, mediawiki\/extensions\/WikibaseQuery, mediawiki\/extensions\/WikibaseQueryEngine, mediawiki\/extensions\/WikimediaIncubator, mediawiki\/extensions\/WikimediaMaintenance, mediawiki\/extensions\/WikimediaMessages, mediawiki\/extensions\/WikimediaShopLink, mediawiki\/extensions\/ZeroRatedMobileAccess, mediawiki\/extensions\/cldr, mediawiki\/extensions\/intersection, mediawiki\/extensions\/skins, mediawiki\/extensions\/timeline, mediawiki\/extensions\/wikihiero, mediawiki\/php\/FastStringSearch, mediawiki\/php\/NativePreprocessor, mediawiki\/php\/luasandbox, mediawiki\/php\/wikidiff, mediawiki\/php\/wikidiff2, mediawiki\/php\/wmerrors, mediawiki\/skins\/erudite, mediawiki\/skins\/mediawiki-strapping, mediawiki\/skins\/webplatform, mediawiki\/tools\/code-utils, mediawiki\/tools\/dippybird, mediawiki\/tools\/fluoride, mediawiki\/tools\/release, mediawiki\/vagrant, operations\/apache-config, operations\/debs\/adminbot, operations\/debs\/ircecho, operations\/debs\/lucene-search-2, operations\/dumps, operations\/mediawiki-config, operations\/software\/redactatron, pywikibot\/compat, pywikibot\/core, pywikibot\/i18n, sartoris, translatewiki"
+				}
+			],
+			"name": "gate-and-submit"
+		},
+		{
+			"description": null,
+			"change_queues": [
+				{
+					"heads": [
+						
+					],
+					"name": ""
+				}
+			],
+			"name": "post"
+		},
+		{
+			"description": null,
+			"change_queues": [
+				{
+					"heads": [
+						
+					],
+					"name": "analytics\/libanon, analytics\/udp-filters, analytics\/webstatscollector, analytics\/wikistats, integration\/docroot, mediawiki\/core, mediawiki\/extensions\/Math, mediawiki\/extensions\/Parsoid, mediawiki\/extensions\/VisualEditor, operations\/mediawiki-config, operations\/puppet"
+				}
+			],
+			"name": "postmerge"
+		},
+		{
+			"description": null,
+			"change_queues": [
+				{
+					"heads": [
+						
+					],
+					"name": ""
+				}
+			],
+			"name": "publish"
+		},
+		{
+			"description": null,
+			"change_queues": [
+				{
+					"heads": [
+						[
+							{
+								"url": "https:\/\/gerrit.wikimedia.org\/r\/74853",
+								"project": "mediawiki\/extensions\/VisualEditor",
+								"jobs": [
+									{
+										"url": "https:\/\/integration.wikimedia.org\/ci\/job\/mwext-Translate-phpcs-HEAD\/1501\/",
+										"voting": false,
+										"result": "FAILURE",
+										"name": "mwext-Translate-phpcs-HEAD"
+									},
+									{
+										"url": "https:\/\/integration.wikimedia.org\/ci\/job\/mwext-Translate-lint\/3288\/",
+										"voting": true,
+										"result": "SUCCESS",
+										"name": "mwext-Translate-lint"
+									},
+									{
+										"url": null,
+										"voting": true,
+										"result": null,
+										"name": "mwext-Translate-testextensions-master"
+									}
+								],
+								"id": "74853,2"
+							}
+						]
+					],
+					"name": "analytics\/libanon, analytics\/udp-filters, analytics\/webstatscollector, analytics\/wikistats, apps\/android\/commons, integration\/docroot, mediawiki\/core, mediawiki\/extensions\/AbuseFilter, mediawiki\/extensions\/ActiveAbstract, mediawiki\/extensions\/AntiSpoof, mediawiki\/extensions\/Arrays, mediawiki\/extensions\/Ask, mediawiki\/extensions\/BookManager, mediawiki\/extensions\/CentralNotice, mediawiki\/extensions\/Cite, mediawiki\/extensions\/CodeReview, mediawiki\/extensions\/ContributionTracking, mediawiki\/extensions\/DataTypes, mediawiki\/extensions\/DataValues, mediawiki\/extensions\/Diff, mediawiki\/extensions\/DonationInterface, mediawiki\/extensions\/E3Experiments, mediawiki\/extensions\/Echo, mediawiki\/extensions\/EducationProgram, mediawiki\/extensions\/EtherEditor, mediawiki\/extensions\/EventLogging, mediawiki\/extensions\/Foxway, mediawiki\/extensions\/Gadgets, mediawiki\/extensions\/GeoData, mediawiki\/extensions\/GuidedTour, mediawiki\/extensions\/JsonData, mediawiki\/extensions\/LabeledSectionTransclusion, mediawiki\/extensions\/Maps, mediawiki\/extensions\/Math, mediawiki\/extensions\/MobileFrontend, mediawiki\/extensions\/MultiMaps, mediawiki\/extensions\/NaturalLanguageList, mediawiki\/extensions\/Nonlinear, mediawiki\/extensions\/PageTriage, mediawiki\/extensions\/PagedTiffHandler, mediawiki\/extensions\/ParserFunctions, mediawiki\/extensions\/ParserHooks, mediawiki\/extensions\/Parsoid, mediawiki\/extensions\/Poem, mediawiki\/extensions\/PoolCounter, mediawiki\/extensions\/ProofreadPage, mediawiki\/extensions\/ReplaceSet, mediawiki\/extensions\/Scribunto, mediawiki\/extensions\/SemanticMediaWiki, mediawiki\/extensions\/SlippyMap, mediawiki\/extensions\/Survey, mediawiki\/extensions\/TemplateData, mediawiki\/extensions\/TitleBlacklist, mediawiki\/extensions\/Translate, mediawiki\/extensions\/TranslationNotifications, mediawiki\/extensions\/Transliterator, mediawiki\/extensions\/UploadWizard, mediawiki\/extensions\/Validator, mediawiki\/extensions\/Variables, mediawiki\/extensions\/VisualEditor, mediawiki\/extensions\/Wikibase, mediawiki\/extensions\/WikibaseDataModel, mediawiki\/extensions\/WikibaseDatabase, mediawiki\/extensions\/WikibaseQuery, mediawiki\/extensions\/WikibaseQueryEngine, mediawiki\/extensions\/wikihiero, mediawiki\/php\/FastStringSearch, mediawiki\/php\/NativePreprocessor, mediawiki\/php\/luasandbox, mediawiki\/php\/wikidiff, mediawiki\/php\/wikidiff2, mediawiki\/php\/wmerrors, operations\/debs\/lucene-search-2, operations\/mediawiki-config"
+				}
+			],
+			"name": "test"
+		}
+	],
+	"trigger_event_queue": {
+		"length": 0
+	},
+	"result_event_queue": {
+		"length": 0
+	}
+}

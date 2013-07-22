@@ -1,12 +1,6 @@
 <!--
 	poll: https://integration.wikimedia.org/zuul/status.json
 	show: status of VE stuff
-
-	poll: https://bugzilla.wikimedia.org/buglist.cgi?bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&columnlist=bug_severity%2Cpriority%2Ccomponent%2Cassigned_to%2Ctarget_milestone%2Cbug_status%2Cresolution%2Cshort_desc&component=ContentEditable&component=Data%20Model&component=General&component=Initialisation%20and%20integration&component=Mobile&component=Parser%2FParsoid&component=User%20Interface&product=VisualEditor&query_format=advanced&resolution=---&title=Bug%20List%3A%20VE%20%28All%29&ctype=atom&list_id=218059
-	show: number of bugs by category
-
-	poll: https://gerrit.wikimedia.org/r/changes/?q=status:open%20project:mediawiki/extensions/VisualEditor%20-label:Code-Review%3C=-1%20-label:Verified%3C=-1
-	show: stuff that's ready to be reviewed, stuff that failed (-1)
 -->
 <!DOCTYPE html>
 
@@ -14,9 +8,12 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Pop Demo</title>
+		<link href='http://fonts.googleapis.com/css?family=Offside' rel='stylesheet' type='text/css'>
 		<link href="css/screen.css" rel="stylesheet">
 	</head>
 	<body>
+		<ul id="changelist"></ul>
+		<ul id="pipelinelist"></ul>
 		<svg id="buglist" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" xml:space="preserve">
 			<defs>
 				<path id="splat" d="M12.429,0.201c-3.998,0.866-0.515,2.244,4.754,4.866c-5.776-0.736-8.87-0.929-5.64,2.358 c-4.211-1.594-1.908,1.583,1.64,6.938C8.25,10.39,6.105,9.865,7.758,15.329C4.411,10.842,3,10.009,3.043,15.195 c-1.93-4.679-2.732-1.908-4.02,4.437c-0.724-6.345-2.207-6.566-5.021-0.691c0.924-6.38,1.203-9.837-2.237-6.166 c1.749-4.652-0.186-3.605-5.109-0.208c3.54-4.78,5.453-7.216,1.07-5.847c3.404-3.064,3.17-3.377-1.434-3.105 c4.1-2.159,2.359-2.547-2.921-3.413c5.28-1.147,7.738-1.346,3.977-3.132c4.267-0.102-0.14-2.873-5.382-6.72 c6.221,2.153,7.721,1.479,3.945-3.258c5.162,3.352,7.613,4.924,5.873,0.563c3.435,3.381,2.859-1.156,1.8-7.755 c2.946,6.093,4.716,11.922,5.439,8.199c1.29,3.723,2.656-0.616,4.855-6.006c-0.31,5.898-0.689,9.295,2.087,6.083 c-1.083,4.194,1.699,2.141,6.355-1.271c-3.271,4.797-3.345,6.435,1.636,4.674c-4,3.453-2.068,4.081,3.929,3.569 C12.388-2.45,8.43-0.945,12.429,0.201z"/>
@@ -64,6 +61,8 @@
 		</svg>
 		<script src="js/jquery.js"></script>
 		<script src="js/bugs.js"></script>
+		<script src="js/changes.js"></script>
+		<script src="js/pipelines.js"></script>
 		<script>
 			var buglist = new BugList();
 
@@ -71,9 +70,29 @@
 			buglist.update();
 
 			// Update every 15 min
-			setInterval( function () {
-				buglist.update();
-			}, 900000 );
+			//setInterval( function () {
+			//	buglist.update();
+			//}, 900000 );
+
+			var changelist = new ChangeList();
+
+			// Populate bugs from bugzilla
+			changelist.update();
+
+			// Update every minute
+			//setInterval( function () {
+			//	changelist.update();
+			//}, 60000 );
+
+			var pipelinelist = new PipelineList();
+
+			// Populate bugs from bugzilla
+			pipelinelist.update();
+
+			// Update every minute
+			//setInterval( function () {
+			//	pipelinelist.update();
+			//}, 60000 );
 		</script>
 	</body>
 </html>
