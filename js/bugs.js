@@ -114,10 +114,17 @@ Bug.prototype.onCleanup = function () {
 };
 
 window.BugList = function() {
+	var $canvas;
 	// Properties
 	this.canvas = document.getElementById( 'buglist' );
 	this.element = document.createElementNS( svgns, 'g' );
-	this.rect = this.canvas.getBoundingClientRect();
+	// width/height computation and getBoundingClientRect() are broken
+	// for <svg>s in Firefox; jQuery knows how to work around this
+	$canvas = $( this.canvas );
+	this.rect = {
+		width: $canvas.width(),
+		height: $canvas.height()
+	};
 	this.bugs = {};
 
 	// Initialization
